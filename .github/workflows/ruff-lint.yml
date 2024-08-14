@@ -24,6 +24,6 @@ jobs:
         run: |
           poetry install --no-root
 
-      - name: Run Ruff
+      - name: Run Ruff Lint
         run: |
-          poetry run ruff check .
+          make lint
