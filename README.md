@@ -1,0 +1,1 @@
+![example workflow](https://github.com/bpsospanov/github-actions/actions/workflows/lint.yml/badge.svg)
