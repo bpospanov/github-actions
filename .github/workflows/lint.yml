@@ -15,7 +15,8 @@ jobs:
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
           First_Name: Mona
-      - run: |
+      - name: "тестирую гитхаб переменные"
+        run: |
           echo "Имя текущего воркфлоу – $GITHUB_WORKFLOW"
           echo "Branch name: $GITHUB_REF"
       - name: Checkout code
