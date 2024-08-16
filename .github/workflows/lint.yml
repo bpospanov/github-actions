@@ -7,7 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Имя текущего воркфлоу – $GITHUB_WORKFLOW"
+      - run: |
+          echo "Имя текущего воркфлоу – $GITHUB_WORKFLOW"
+          echo "Branch name: $GITHUB_REF"
       - name: Checkout code
         uses: actions/checkout@v4
 
